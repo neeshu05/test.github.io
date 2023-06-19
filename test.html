@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 100px;
+            padding: 50px;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            background-color: rgb(212, 212, 67);
+            border: 1px solid #111;
+            position: relative;
+        }
+
+        .container .heading {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .container .emoji {
+            font-size: 100px;
+            position: absolute;
+            left: 330px;
+            opacity: 0.5;
+            transform: rotate(-90deg)
+        }
+
+        .special .bottom {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(236, 98, 185);
+            opacity: 0.8;
+            position: absolute;
+            bottom: 0px;
+
+        }
+
+        .special .triangle {
+            width: 0;
+            height: 0;
+            border-left: 180px solid transparent;
+            border-right: 180px solid transparent;
+            border-top: 60px solid rgb(212, 212, 67);
+            position: absolute;
+            bottom: 90px;
+            display: flex;
+            left: 240px;
+
+
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- heading design -->
+        <h3 class="heading">Pinak Idea Lab</h3>
+        
+        <!-- emoji design -->
+        <span class='emoji'>&#127773;</span>
+        
+        <!-- bottom design -->
+        <div class="special">
+            <div class="triangle"></div>
+            <div class="bottom"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
